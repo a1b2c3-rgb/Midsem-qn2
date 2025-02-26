@@ -13,7 +13,7 @@ menuItems.forEach((item, index) => {
 });
 
 let newDish = prompt("Would you like to suggest a new dish to add to our menu?");
-if (newDish && newDish.trim() !== "") {
+if (newDish !== null && newDish.trim() !== "") {
     menuItems.push(newDish.trim());
     console.log("Updated menu:");
     menuItems.forEach((item, index) => {
